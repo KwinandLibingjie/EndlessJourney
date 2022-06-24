@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css?jv=1.0.20160307" />
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-    <script src="https://downqn.tuyoo.com/gwapp/net/jquery-1.9.1.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css?jv=1.0.20220624" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css?jv=1.0.20220624" />
+    <script
+      src="https://downqn.tuyoo.com/gwapp/net/jquery-1.9.1.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="js/swiper.min.js?jv=1.0.20220624" type="text/javascript" charset="utf-8"></script>
     <script>
       ;(function (win, doc) {
         console.log('win', win)
@@ -18,7 +22,11 @@
         function setFont() {
           var html = document.documentElement
           var k = 750
+          // if (html.clientWidth > 640) {
+          //   html.style.fontSize = 100 + 'px'
+          // } else {
           html.style.fontSize = (html.clientWidth / k) * 100 + 'px'
+          // }
         }
         setFont()
         setTimeout(function () {
@@ -47,40 +55,40 @@
       <a href="http://www.tuyoo.com/" class="link"></a>
     </div>
     <div class="part2">
-      <img class="part2Bg" src="img/bg02.png" />
+      <img class="part2Bg" src="img/bg02.png?jv=1.0.20220624" />
       <div class="lottery" id="J_lottery">
         <table border="0" cellpadding="0" cellspacing="0">
           <tbody>
             <tr>
               <td class="luck-unit luck-unit-0">
-                <div class="prize"><img src="img/p0.png" class="pimg" alt="HUAWEI FreeBuds 4E" /></div>
+                <div class="prize"><img src="img/p0.png?jv=1.0.20220624" class="pimg" alt="HUAWEI FreeBuds 4E" /></div>
               </td>
               <td class="luck-unit luck-unit-1">
-                <div class="prize"><img src="img/p1.png" class="pimg" alt="华为 nova 9" /></div>
+                <div class="prize"><img src="img/p1.png?jv=1.0.20220624" class="pimg" alt="华为 nova 9" /></div>
               </td>
               <td class="luck-unit luck-unit-2">
-                <div class="prize"><img src="img/p2.png" class="pimg" alt="华为AI音响" /></div>
+                <div class="prize"><img src="img/p2.png?jv=1.0.20220624" class="pimg" alt="华为AI音响" /></div>
               </td>
             </tr>
             <tr>
               <td class="luck-unit luck-unit-7">
-                <div class="prize"><img src="img/p3.png" class="pimg" alt="京东卡500" /></div>
+                <div class="prize"><img src="img/p3.png?jv=1.0.20220624" class="pimg" alt="京东卡500" /></div>
               </td>
               <td class="cj_unit"><a href="javascript:;" id="J_cj" class="cj_btn">立即抽奖</a></td>
               <!-- 增加 btn_dom  按钮变灰 -->
               <td class="luck-unit luck-unit-3">
-                <div class="prize"><img src="img/p4.png" class="pimg" alt="京东卡100" /></div>
+                <div class="prize"><img src="img/p4.png?jv=1.0.20220624" class="pimg" alt="京东卡100" /></div>
               </td>
             </tr>
             <tr>
               <td class="luck-unit luck-unit-6">
-                <div class="prize"><img src="img/p5.png" class="pimg" alt="京东卡50" /></div>
+                <div class="prize"><img src="img/p5.png?jv=1.0.20220624" class="pimg" alt="京东卡50" /></div>
               </td>
               <td class="luck-unit luck-unit-5">
-                <div class="prize"><img src="img/p6.png" class="pimg" alt="远征大礼包" /></div>
+                <div class="prize"><img src="img/p6.png?jv=1.0.20220624" class="pimg" alt="远征大礼包" /></div>
               </td>
               <td class="luck-unit luck-unit-4">
-                <div class="prize"><img src="img/p7.png" /></div>
+                <div class="prize"><img src="img/p7.png?jv=1.0.20220624" /></div>
               </td>
             </tr>
           </tbody>
@@ -89,18 +97,18 @@
       <span class="rule"></span>
     </div>
     <div class="part3">
-      <img class="part3Bg" src="img/bg03.png" />
+      <img class="part3Bg" src="img/bg03.png?jv=1.0.20220624" />
       <div class="heros">
         <div class="swiper-container swiper" id="swiper">
           <div class="swiper-wrapper">
             <!--轮播图 1-->
-            <div class="swiper-slide"><img src="img/hero1.png?jv=1.0.20160301" /></div>
+            <div class="swiper-slide"><img src="img/hero1.png?jv=1.0.20220624" /></div>
             <!--轮播图 2-->
-            <div class="swiper-slide"><img src="img/hero2.png?jv=1.0.20160301" /></div>
+            <div class="swiper-slide"><img src="img/hero2.png?jv=1.0.20220624" /></div>
             <!--轮播图 3-->
-            <div class="swiper-slide"><img src="img/hero3.png?jv=1.0.20160301" /></div>
+            <div class="swiper-slide"><img src="img/hero3.png?jv=1.0.20220624" /></div>
             <!--轮播图 4-->
-            <div class="swiper-slide"><img src="img/hero4.png?jv=1.0.20160301" /></div>
+            <div class="swiper-slide"><img src="img/hero4.png?jv=1.0.20220624" /></div>
           </div>
           <div class="swiper-pagination pagination"></div>
           <div class="swiper-button-next"></div>
@@ -109,35 +117,26 @@
       </div>
     </div>
     <div class="part4">
-      <img class="part4Bg" src="img/bg04.png" />
+      <img class="part4Bg" src="img/bg04.png?jv=1.0.20220624" />
       <span class="play"></span>
       <a class="activity" href="http://www.tuyoo.com/"></a>
     </div>
     <div class="rulesDia dia">
       <div class="ruleBox diaBox">
         <div class="ruleClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
-        <img class="ruleDetail" src="img/ruleDetail.png" />
+        <img class="ruleDetail" src="img/ruleDetail.png?jv=1.0.20220624" />
       </div>
     </div>
     <div class="videoDia dia"></div>
-    <div class="noPreDia dia">
-      <div class="diaBox">
-        <div class="noPreClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
-        <p class="noPreDetail">领主大人，预约游戏即可即可获得一次抽奖机会，赶快预约吧</p>
-        <img class="noPreImg detailImg" src="img/noPre.png" />
-      </div>
-    </div>
     <div class="haveLotteryDia dia">
       <div class="diaBox">
         <div class="haveLotteryClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
         <p class="haveLotteryDetail"></p>
-        <img class="haveLotteryImg detailImg" src="img/havePre.png" />
+        <img class="haveLotteryImg detailImg" src="img/havePre.png?jv=1.0.20220624" />
       </div>
     </div>
-    <script src="js/lottery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/hwlttz.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/heros.js" text="text/javascript" charset="utf-8"></script>
-    <script src="js/index.js" text="text/javascript" charset="utf-8"></script>
+    <script src="js/hwlttz.js?jv=1.0.20220624" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js?jv=1.0.20220624" text="text/javascript" charset="utf-8"></script>
     <script>
       //设置 webview 字体大小不受系统修改而改变
       ;(function () {
