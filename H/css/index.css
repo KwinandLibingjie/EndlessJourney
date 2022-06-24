@@ -27,12 +27,12 @@ body {
   /* 最大宽度 */
   /* max-width: 640px; */
   /* 底部留空 */
-  padding-bottom: 0.8rem;
+  padding-bottom: 80px;
 }
 .link {
   position: absolute;
-  top: 8.9rem;
-  left: 4.9rem;
+  top: 81%;
+  right: 5%;
   display: block;
   width: 2.2rem;
   height: 0.7rem;
@@ -42,13 +42,16 @@ body {
 .part1,
 .part2,
 .part3,
-.part4 {
+.part4,
+.part5,
+.part6,
+.part7 {
   position: relative;
 }
 
 .lottery {
   position: absolute;
-  top: 1.25rem;
+  top: 15%;
   left: 0;
   color: #fff;
   margin: 0 auto;
@@ -82,7 +85,7 @@ body {
   margin: 0 auto;
   border: none;
 }
-.prize p {
+/* .prize p {
   position: absolute;
   left: 0;
   bottom: 0.08rem;
@@ -92,7 +95,7 @@ body {
   color: #fff;
   font-size: 0.18rem;
   white-space: nowrap;
-}
+} */
 .cj_btn {
   display: block;
   width: 1.94rem;
@@ -119,8 +122,9 @@ body {
 }
 .rule {
   position: absolute;
-  top: 7.45rem;
-  left: 2rem;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 3.5rem;
   height: 0.5rem;
@@ -130,7 +134,7 @@ body {
   width: auto;
 }
 .ruleBox .ruleClose {
-  top: -0.4rem;
+  transform: translateY(-100%);
   right: 0;
   width: 0.4rem;
   height: 0.4rem;
@@ -157,7 +161,7 @@ body {
 .ruleDetail,
 .detailImg {
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 85vh;
   width: auto;
 }
 .haveLotteryDetail {
@@ -175,7 +179,7 @@ body {
 }
 .diaClose {
   position: absolute;
-  top: -0.6rem;
+  transform: translateY(-100%);
   right: 5%;
   width: 0.6rem;
   height: 0.6rem;
@@ -202,7 +206,7 @@ body {
 
 .heros {
   position: absolute;
-  top: 8.37rem;
+  top: 15%;
   left: 0;
 }
 .swiper-container,
@@ -245,21 +249,21 @@ body {
   width: 0.6rem;
   height: 0.55rem;
   position: absolute;
-  top: 90%;
+  top: auto;
+  bottom: 6%;
 }
 .swiper .swiper-button-next {
   background-image: url('../img/right.png');
-  right: 0.5rem;
+  right: 5%;
 }
 .swiper .swiper-button-prev {
   background-image: url('../img/left.png');
-
-  left: 0.5rem;
+  left: 5%;
 }
 
 .play {
   position: absolute;
-  top: 3.9rem;
+  top: 52.5%;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -275,7 +279,7 @@ body {
 }
 .activity {
   position: absolute;
-  top: 9.1rem;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   display: block;
