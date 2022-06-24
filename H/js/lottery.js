@@ -1,6 +1,16 @@
 $(function () {
   //抽奖
   var click = false
+  var price = [
+    'HUAWEI FreeBuds 4E',
+    '华为 nova 9',
+    '华为AI音响',
+    '京东卡500',
+    '京东卡100',
+    '京东卡50',
+    '远征大礼包',
+    '7',
+  ]
   var luck = {
     index: -1,
     count: 7,
@@ -40,6 +50,7 @@ $(function () {
       return false
     },
   }
+
   luck.init('J_lottery')
   function roll() {
     luck.times += 1
@@ -47,9 +58,12 @@ $(function () {
     if (luck.times > luck.cycle + 10 && luck.prize == luck.index) {
       clearTimeout(luck.timer)
       luck.times = 0
-      luck.prize = -1
       setTimeout(function () {
         $('#J_cj').removeClass('cj_btn_dom')
+        $('.luck-unit').removeClass('active')
+        $('.haveLotteryDetail').html(luck.prize == 7 ? '太可惜了，竟然与奖品擦肩而过' : '恭喜获得' + price[luck.prize])
+        $('.haveLotteryDia').show()
+        luck.prize = -1
       }, 200)
       click = false
     } else {
@@ -72,16 +86,25 @@ $(function () {
     }
     return false
   }
+
+  var kind = '2'
   //点击抽奖按钮
   $('#J_cj').on('click', function () {
-    $(this).addClass('cj_btn_dom')
-    if (click) {
-      return false
+    if (kind == '0') {
+      $('.noPreDia').show()
+    } else if (kind == '1') {
+      $('.haveLotteryDetail').html('已参与过活动，敬请关注论坛，参与更多有奖活动')
+      $('.haveLotteryDia').show()
     } else {
-      luck.speed = 100
-      roll()
-      click = true
-      return false
+      $(this).addClass('cj_btn_dom')
+      if (click) {
+        return false
+      } else {
+        luck.speed = 100
+        roll()
+        click = true
+        return false
+      }
     }
   })
 })

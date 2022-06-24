@@ -30,18 +30,6 @@ $(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // on: {
-    //   slideChange: function () {
-    //     debugger
-    //     for (i = 1; i <= this.slides.length; i++) {
-    //       if (i == this.activeIndex) {
-    //         $('.swiper-pagination-customs' + this.activeIndex).css('top', '-0.15rem')
-    //       } else {
-    //         $('.swiper-pagination-customs' + this.activeIndex).css('top', '0')
-    //       }
-    //     }
-    //   },
-    // },
   })
 
   $('.swiper-pagination').on('click', 'div', function () {
