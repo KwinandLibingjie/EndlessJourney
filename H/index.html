@@ -22,11 +22,11 @@
         function setFont() {
           var html = document.documentElement
           var k = 750
-          // if (html.clientWidth > 640) {
-          //   html.style.fontSize = 100 + 'px'
-          // } else {
-          html.style.fontSize = (html.clientWidth / k) * 100 + 'px'
-          // }
+          if (html.clientWidth > 640) {
+            html.style.fontSize = (640 / 750) * 100 + 'px'
+          } else {
+            html.style.fontSize = (html.clientWidth / k) * 100 + 'px'
+          }
         }
         setFont()
         setTimeout(function () {
@@ -52,7 +52,7 @@
   <body>
     <div class="part1">
       <img class="part1Bg" src="img/bg1.png?jv=1.0.20160301" />
-      <a href="http://www.tuyoo.com/" class="link"></a>
+      <div class="lt_btn link" data-forumid="1012324">论坛</div>
     </div>
     <div class="part2">
       <img class="part2Bg" src="img/bg2.png?jv=1.0.20220624" />
@@ -128,7 +128,7 @@
     </div>
     <div class="part7">
       <img class="part7Bg" src="img/bg7.png?jv=1.0.20220624" />
-      <a class="activity" href="http://www.tuyoo.com/"></a>
+      <div class="tz_btn activity" data-postid="1513969715465240597">帖子</div>
     </div>
     <div class="rulesDia dia">
       <div class="ruleBox diaBox">
