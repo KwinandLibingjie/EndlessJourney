@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+      name="viewport"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Endless Journey</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css?jv=1.0.20220624" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css?jv=1.0.20220624" />
+    <script
+      src="https://downqn.tuyoo.com/gwapp/net/jquery-1.9.1.min.js?jv=1.0.20220624"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="js/swiper.min.js?jv=1.0.20220624" type="text/javascript" charset="utf-8"></script>
+    <script>
+      ;(function (win, doc) {
+        console.log('win', win)
+        console.log('doc', doc)
+        if (!win.addEventListener) return
+        var html = document.documentElement
+        function setFont() {
+          var html = document.documentElement
+          var k = 750
+          if (html.clientWidth > 640) {
+            html.style.fontSize = (640 / 750) * 100 + 'px'
+          } else {
+            html.style.fontSize = (html.clientWidth / k) * 100 + 'px'
+          }
+        }
+        setFont()
+        setTimeout(function () {
+          setFont()
+        }, 300)
+        doc.addEventListener('DOMContentLoaded', setFont, false)
+        win.addEventListener('resize', setFont, false)
+        win.addEventListener('load', setFont, false)
+      })(window, document)
+
+      window.addEventListener(
+        'load',
+        function () {
+          setTimeout(hideURLbar, 0)
+        },
+        false
+      )
+      function hideURLbar() {
+        window.scrollTo(0, 1)
+      }
+    </script>
+  </head>
+  <body>
+    <div class="part1">
+      <img class="part1Bg" src="img/bg1.png?jv=1.0.20160301" />
+      <div class="lt_btn link" data-forumid="1012324">论坛</div>
+    </div>
+    <div class="part2">
+      <img class="part2Bg" src="img/bg2.png?jv=1.0.20220624" />
+      <div class="lottery" id="J_lottery">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="luck-unit luck-unit-0">
+                <div class="prize"><img src="img/p0.png?jv=1.0.20220624" class="pimg" alt="HUAWEI FreeBuds 4E" /></div>
+              </td>
+              <td class="luck-unit luck-unit-1">
+                <div class="prize"><img src="img/p1.png?jv=1.0.20220624" class="pimg" alt="华为 nova 9" /></div>
+              </td>
+              <td class="luck-unit luck-unit-2">
+                <div class="prize"><img src="img/p2.png?jv=1.0.20220624" class="pimg" alt="华为AI音响" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="luck-unit luck-unit-7">
+                <div class="prize"><img src="img/p3.png?jv=1.0.20220624" class="pimg" alt="京东卡500" /></div>
+              </td>
+              <td class="cj_unit"><a href="javascript:;" id="J_cj" class="cj_btn">立即抽奖</a></td>
+              <!-- 增加 btn_dom  按钮变灰 -->
+              <td class="luck-unit luck-unit-3">
+                <div class="prize"><img src="img/p4.png?jv=1.0.20220624" class="pimg" alt="京东卡100" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="luck-unit luck-unit-6">
+                <div class="prize"><img src="img/p5.png?jv=1.0.20220624" class="pimg" alt="京东卡50" /></div>
+              </td>
+              <td class="luck-unit luck-unit-5">
+                <div class="prize"><img src="img/p6.png?jv=1.0.20220624" class="pimg" alt="远征大礼包" /></div>
+              </td>
+              <td class="luck-unit luck-unit-4">
+                <div class="prize"><img src="img/p7.png?jv=1.0.20220624" /></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="rule"></span>
+    </div>
+    <div class="part3">
+      <img class="part3Bg" src="img/bg3.png?jv=1.0.20220624" />
+    </div>
+    <div class="part4">
+      <img class="part4Bg" src="img/bg4.png?jv=1.0.20220624" />
+    </div>
+    <div class="part5">
+      <img class="part5Bg" src="img/bg5.png?jv=1.0.20220624" />
+      <div class="heros">
+        <div class="swiper-container swiper" id="swiper">
+          <div class="swiper-wrapper">
+            <!--轮播图 1-->
+            <div class="swiper-slide"><img src="img/hero1.png?jv=1.0.20220624" /></div>
+            <!--轮播图 2-->
+            <div class="swiper-slide"><img src="img/hero2.png?jv=1.0.20220624" /></div>
+            <!--轮播图 3-->
+            <div class="swiper-slide"><img src="img/hero3.png?jv=1.0.20220624" /></div>
+            <!--轮播图 4-->
+            <div class="swiper-slide"><img src="img/hero4.png?jv=1.0.20220624" /></div>
+          </div>
+          <div class="swiper-pagination pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div class="part6">
+      <img class="part6Bg" src="img/bg6.png?jv=1.0.20220624" />
+      <span class="play"></span>
+    </div>
+    <div class="part7">
+      <img class="part7Bg" src="img/bg7.png?jv=1.0.20220624" />
+      <a class="tz_btn activity" href="https://game.oppomobile.com/bbs/index.html?threadId=10109312&board=22558#/detail"
+        >论坛</a
+      >
+    </div>
+    <div class="rulesDia dia">
+      <div class="ruleBox diaBox">
+        <div class="ruleClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
+        <img class="ruleDetail" src="img/ruleDetail.png?jv=1.0.20220624" />
+      </div>
+    </div>
+    <div class="videoDia dia"></div>
+    <div class="haveLotteryDia dia">
+      <div class="diaBox">
+        <div class="haveLotteryClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
+        <p class="haveLotteryDetail"></p>
+        <img class="haveLotteryImg detailImg" src="img/havePre.png?jv=1.0.20220624" />
+      </div>
+    </div>
+    <script src="js/index.js?jv=1.0.20220624" text="text/javascript" charset="utf-8"></script>
+    <script>
+      //设置 webview 字体大小不受系统修改而改变
+      ;(function () {
+        if (window.HiSpaceObject) {
+          window.HiSpaceObject.setTextSizeNormal()
+        }
+      })()
+    </script>
+  </body>
+</html>
