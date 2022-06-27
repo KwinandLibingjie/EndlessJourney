@@ -9,12 +9,12 @@ $(function () {
     var price = [
       'HUAWEI FreeBuds 4E',
       '华为 nova 9',
-      '华为AI音响',
       '京东卡500',
       '京东卡100',
-      '京东卡50',
-      '远征大礼包',
       '谢谢参与',
+      '远征大礼包',
+      '京东卡50',
+      '华为AI音响',
     ]
     var luck = {
       index: -1,
@@ -67,7 +67,7 @@ $(function () {
           $('#J_cj').removeClass('cj_btn_dom')
           $('.luck-unit').removeClass('active')
           $('.haveLotteryDetail').html(
-            luck.prize == 7 ? '太可惜了，竟然与奖品擦肩而过' : '恭喜获得' + price[luck.prize]
+            luck.prize == 4 ? '太可惜了，竟然与奖品擦肩而过' : '恭喜获得' + price[luck.prize]
           )
           $('.haveLotteryDia').show()
           luck.prize = -1
