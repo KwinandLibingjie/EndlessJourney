@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, p,
+h1, h2, h3, h4, h5, h6,
+a,  em, img, b, u, i,
+dl, dt, dd, ol, ul, li,
+article, aside, canvas, details, embed,
+footer, header, menu, nav,  section, audio, video {
+    border: 0;
+    margin: 0;
+	padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details,
+footer, header,menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* 去掉点击时色块 */
+a {
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:active,
+a:hover {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
