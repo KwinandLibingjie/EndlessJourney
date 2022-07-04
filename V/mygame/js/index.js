@@ -131,13 +131,13 @@ $(function () {
               '<div class="swiper-pagination-customs swiper-pagination-customs-active"><img class="customsContent" src="img/' +
               'colorHero' +
               (i + 1) +
-              '.png?jv=1.0.20220624"></img></div>'
+              '.png"></img></div>'
           } else {
             paginationHtml +=
               '<div class="swiper-pagination-customs"><img class="customsContent" src="img/' +
               'greyHero' +
               (i + 1) +
-              '.png?jv=1.0.20220624"></img></div>'
+              '.png"></img></div>'
           }
         }
         return paginationHtml
@@ -155,7 +155,7 @@ $(function () {
   $(function () {
     $('.play').click(function () {
       $('.videoDia').html(
-        '<div class="videoBox diaBox"><div class="videoClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div><video class="video" autoplay controls="controls" src="img/EndlessJourney.mp4?jv=1.0.20220624"></video></div>'
+        '<div class="videoBox diaBox"><div class="videoClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div><video class="video" autoplay controls="controls" src="img/EndlessJourney.mp4"></video></div>'
       )
       $('.videoDia').show()
     })

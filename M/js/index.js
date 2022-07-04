@@ -160,7 +160,7 @@ $(function () {
   $(function () {
     $('.play').click(function () {
       $('.videoDia').html(
-        '<div class="videoBox diaBox"><div class="videoClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div><video class="video" autoplay controls="controls" src="../img/EndlessJourney.mp4?jv=1.0.20220624"></video></div>'
+        '<div class="videoBox diaBox"><div class="videoClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div><video class="video" autoplay controls="controls" src="img/EndlessJourney.mp4?jv=1.0.20220624"></video></div>'
       )
       $('.videoDia').show()
     })
