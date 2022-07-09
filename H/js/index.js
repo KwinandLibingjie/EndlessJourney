@@ -8,13 +8,13 @@ $(function () {
     var click = false
     var price = [
       'HUAWEI FreeBuds 4E',
-      '华为 nova 9',
+      'HUAWEI nova 9',
       '京东卡500',
       '京东卡100',
       '谢谢参与',
       '远征大礼包',
       '京东卡50',
-      '华为AI音响',
+      '华为AI音响2',
     ]
     var luck = {
       index: -1,
