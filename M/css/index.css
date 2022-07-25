@@ -288,3 +288,8 @@ body {
   height: 3.2rem;
   background: rgba(196, 56, 56, 0);
 }
+.priceCenter {
+  width: 1.94rem;
+  height: 1.94rem;
+  display: block;
+}
