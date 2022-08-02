@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+      name="viewport"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Endless Journey</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css?jv=1.0.20220624" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css?jv=1.0.20220624" />
+    <script src="js/jquery.min.js?jv=1.0.20220624" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.min.js?jv=1.0.20220624" type="text/javascript" charset="utf-8"></script>
+    <script>
+      ;(function (win, doc) {
+        console.log('win', win)
+        console.log('doc', doc)
+        if (!win.addEventListener) return
+        var html = document.documentElement
+        function setFont() {
+          var html = document.documentElement
+          var k = 750
+          if (html.clientWidth > 640) {
+            html.style.fontSize = (640 / 750) * 100 + 'px'
+          } else {
+            html.style.fontSize = (html.clientWidth / k) * 100 + 'px'
+          }
+        }
+        setFont()
+        setTimeout(function () {
+          setFont()
+        }, 300)
+        doc.addEventListener('DOMContentLoaded', setFont, false)
+        win.addEventListener('resize', setFont, false)
+        win.addEventListener('load', setFont, false)
+      })(window, document)
+
+      window.addEventListener(
+        'load',
+        function () {
+          setTimeout(hideURLbar, 0)
+        },
+        false
+      )
+      function hideURLbar() {
+        window.scrollTo(0, 1)
+      }
+    </script>
+  </head>
+  <body>
+    <div class="part1">
+      <img class="bg" src="img/bg.jpg?jv=1.0.20220802" alt="背景" />
+      <img class="ltLink" src="img/ltBtn.png?jv=1.0.20220802" alt="论坛" />
+      <div class="lottery">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="luck-unit luck-unit-0">
+                <div class="prize"><img src="img/p0.png?jv=1.0.20220802" class="pimg" alt="小米手环7" /></div>
+              </td>
+              <td class="luck-unit luck-unit-1">
+                <div class="prize"><img src="img/p1.png?jv=1.0.20220802" class="pimg" alt="小米12" /></div>
+              </td>
+              <td class="luck-unit luck-unit-2">
+                <div class="prize"><img src="img/p2.png?jv=1.0.20220802" class="pimg" alt="京东卡500" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="luck-unit luck-unit-7">
+                <div class="prize"><img src="img/p3.png?jv=1.0.20220802" class="pimg" alt="SWITCH" /></div>
+              </td>
+              <td class="cj_unit">
+                <a
+                  href="migamecenter://openurl/https://game.xiaomi.com/gcAct/reservationDownload/index.html?refresh=true&hideTitleBar=1&hideBottomBtn=0&actId=4258"
+                  class="cj_btn priceCenter"
+                  >立即抽奖</a
+                >
+              </td>
+              <!-- 增加 btn_dom  按钮变灰 -->
+              <td class="luck-unit luck-unit-3">
+                <div class="prize"><img src="img/p4.png?jv=1.0.20220802" class="pimg" alt="京东卡100" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="luck-unit luck-unit-6">
+                <div class="prize"><img src="img/p5.png?jv=1.0.20220802" class="pimg" alt="京东卡50" /></div>
+              </td>
+              <td class="luck-unit luck-unit-5">
+                <div class="prize"><img src="img/p6.png?jv=1.0.20220802" class="pimg" alt="远征大礼包" /></div>
+              </td>
+              <td class="luck-unit luck-unit-4">
+                <div class="prize"><img src="img/p7.png?jv=1.0.20220802" alt="谢谢参与" /></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <img class="rule" src="img/ruleBtn.png" alt="活动规则" />
+      <div class="heros">
+        <div class="swiper-container swiper" id="swiper">
+          <div class="swiper-wrapper">
+            <!--轮播图 1-->
+            <div class="swiper-slide"><img src="img/hero1.png?jv=1.0.20220802" alt="拉格纳" /></div>
+            <!--轮播图 2-->
+            <div class="swiper-slide"><img src="img/hero2.png?jv=1.0.20220802" alt="希尔德" /></div>
+            <!--轮播图 3-->
+            <div class="swiper-slide"><img src="img/hero3.png?jv=1.0.20220802" alt="哈里斯" /></div>
+            <!--轮播图 4-->
+            <div class="swiper-slide"><img src="img/hero4.png?jv=1.0.20220802" alt="珊卓拉" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="videoPart">
+        <img class="videoBg" src="img/videoBg.png" alt="视频封面框" />
+        <img class="videoImg" src="img/videoImg.jpg" alt="视频封面图" />
+        <img class="play" src="img/play.png" alt="播放按钮" />
+      </div>
+    </div>
+    <div class="part2">
+      <img class="sActivity" src="img/sActivity.jpg?jv=1.0.20220802" alt="s级活动" />
+    </div>
+    <div class="rulesDia dia">
+      <div class="ruleBox diaBox">
+        <div class="ruleClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
+        <img class="ruleDetail" src="img/ruleDetail.png?jv=1.0.20220624" alt="活动规则" />
+      </div>
+    </div>
+    <div class="videoDia dia"></div>
+    <div class="haveLotteryDia dia">
+      <div class="diaBox">
+        <div class="haveLotteryClose diaClose"><i class="close1 close"></i><i class="close2 close"></i></div>
+        <p class="haveLotteryDetail"></p>
+        <img class="haveLotteryImg detailImg" src="img/havePre.png?jv=1.0.20220624" alt="抽奖结果" />
+      </div>
+    </div>
+    <script src="js/index.js?jv=1.0.20220624" text="text/javascript" charset="utf-8"></script>
+    <script>
+      //设置 webview 字体大小不受系统修改而改变
+      ;(function () {
+        if (window.HiSpaceObject) {
+          window.HiSpaceObject.setTextSizeNormal()
+        }
+      })()
+    </script>
+  </body>
+</html>
